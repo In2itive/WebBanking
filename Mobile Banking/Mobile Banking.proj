@@ -32,6 +32,10 @@
     <Folder Include="App_Resources\Android\drawable-nodpi">
       <Platform>Android</Platform>
     </Folder>
+    <Folder Include="icons" />
+    <Folder Include="images" />
+    <Folder Include="viewModels" />
+    <Folder Include="views" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="App_Resources\iOS\icon.png" />
@@ -57,14 +61,28 @@
     <Resource Include="App_Resources\Android\drawable-nodpi\splashscreen.9.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="icons\card.png" />
+    <Content Include="icons\rewards.png" />
+    <Content Include="icons\stores.png" />
+    <Content Include="images\best-coffee.png" />
+    <Content Include="images\bgr_pattern.jpg" />
+    <Content Include="images\cheers.png" />
+    <Content Include="images\cofeeCup-sprite.png" />
+    <Content Include="images\holiday.png" />
+    <Content Include="images\hot-drink.png" />
+    <Content Include="images\love-friend.png" />
+    <Content Include="images\rewards.png" />
     <Content Include="index.html" />
     <Content Include="kendo\js\jquery.min.js" />
     <Content Include="kendo\js\kendo.mobile.min.js" />
     <Content Include="kendo\styles\images\back.png" />
     <Content Include="kendo\styles\images\KendoUI.ttf" />
     <Content Include="kendo\styles\images\KendoUI.woff" />
+    <Content Include="kendo\styles\kendo.jitterz.mobile.all.css" />
     <Content Include="kendo\styles\kendo.mobile.all.min.css" />
+    <Content Include="scripts\appData.js" />
     <Content Include="scripts\hello-world.js" />
+    <Content Include="scripts\main.js" />
     <Content Include="styles\main.css" />
     <Content Include="cordova.ios.js">
       <Platform>iOS</Platform>
@@ -74,6 +92,20 @@
       <Platform>Android</Platform>
       <TargetName>cordova.js</TargetName>
     </Content>
+    <Content Include="styles\phone-1280.css" />
+    <Content Include="styles\phone-480.css" />
+    <Content Include="styles\phone-800.css" />
+    <Content Include="styles\tablet-1024-hdpi.css" />
+    <Content Include="styles\tablet-1024-ldpi.css" />
+    <Content Include="styles\tablet-1280.css" />
+    <Content Include="styles\tablet-600-1024.css" />
+    <Content Include="viewModels\viewModels.js" />
+    <Content Include="views\addCardView.html" />
+    <Content Include="views\cardsView.html" />
+    <Content Include="views\rewardCardView.html" />
+    <Content Include="views\rewardsView.html" />
+    <Content Include="views\singleCardView.html" />
+    <Content Include="views\storesView.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Telerik\ICE\Tools\Mobile\MobileTools.targets" />
 </Project>
