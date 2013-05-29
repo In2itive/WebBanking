@@ -229,6 +229,15 @@
 			that.set("announcements", announcements);
 		}
 	});
+    
+	branchesViewModel = kendo.observable({
+		branches: [],
+        
+		load: function(branches) {
+			var that = this;
+			that.set("branches", branches);
+		}
+	});    
 
 	cardsViewModel = kendo.observable({
 		cards : [],
@@ -275,6 +284,7 @@
 		rewardsViewModel: new RewardsViewModel(),
 		addCardViewModel: new AddCardViewModel(),
 		announcementViewModel: announcementViewModel,
+        branchesViewModel: branchesViewModel,
 		cardsViewModel: cardsViewModel
 	});
     

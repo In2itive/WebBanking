@@ -6,7 +6,8 @@ var AppData = function() {
 
 	_endpoints = {
 		starbucksLocs: {path:"http://www.starbucks.com/api/location.ashx?&features=&lat={LAT}&long={LONG}&limit={MAX}", verb:"GET"},
-		starbucksTest: {path:"scripts/testData/starbucksTest.json", verb:"GET"}
+		starbucksTest: {path:"scripts/testData/starbucksTest.json", verb:"GET"},
+        branchData: {path:"scripts/branches.json", verb:"GET"}
 	};
     
 	_initialCards = [
@@ -29,12 +30,10 @@ var AppData = function() {
 	];
     
 	_announcements = [
-		{ title: "Holiday Drinks Are Here", description: "Enjoy your favorite holiday drinks, like Pumpkin Spice Lattes.", url: "images/holiday.png" },
-		{ title: "Register & Get Free Drinks", description: "Register any Jitterz card and start earning rewards like free drinks. Sign-up now.", url: "images/rewards.png" },
-		{ title: "Cheers to Another Year", description: "Raise a cup of bold and spicy Jitterz Anniversary Blend.", url: "images/cheers.png" },
-		{ title: "Hot Drinks Anytime", description: "Find and enjoy our, hot drinks anytime.", url: "images/hot-drink.png" },
-		{ title: "Friend and Love", description: "Get more for your friends.Get Love.", url: "images/love-friend.png" },
-		{ title: "Wide range of choice", description: "Raise a cup of bold and spicy Jitterz Anniversary Blend.", url: "images/best-coffee.png" }
+		{ title: "Welcome to BCU Mobile", description: "Enjoy the ease and convinence of mobile banking.", url: "images/mobile.png" },
+		{ title: "Mobile Security", description: "The mobile app uses the same security creidetals as Web and Phone Banking. If you dont have access, Sign-up now.", url: "images/rewards.png" },
+		{ title: "Locate Branches", description: "Use your current location to find the nerest BCU branch.", url: "images/cheers.png" },
+		{ title: "More services", description: "Contact or visit a branch to utilise all the services BCU has to offer.", url: "images/hot-drink.png" }
 	];
     
 	_private = {
@@ -119,8 +118,9 @@ var AppData = function() {
 
 	return {
 		getStarbucksLocations: function(lat, lng, max) {
-			var route = $.extend({}, _endpoints.starbucksLocs);
-
+			//var route = $.extend({}, _endpoints.starbucksLocs);
+			var route = $.extend({}, _endpoints.branchData);
+            
 			route.path = route.path.replace(/{LAT}/g, lat);
 			route.path = route.path.replace(/{LONG}/g, lng);
 			route.path = route.path.replace(/{MAX}/g, max || 10);

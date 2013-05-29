@@ -15,23 +15,29 @@
             <div id="map">
 			</div>
             <div data-role="scroller">
-                <ul data-role="listview" id="storeList" data-style="inset" style="display: none">
-                </ul>
+ 				<div id="branches">
+					<ul data-role="listview" id="storeList" 
+						data-style="inset"  data-template="tmplStoreListItem" data-bind="source: branches" style="display: none">
+					</ul>
+				</div>
+               <!-- <ul data-role="listview" id="storeList" data-style="inset" style="display: none">
+                </ul> -->
             </div>    
         </div>           
     </div>
 </div>
 
 <script type="text/x-kendo-template" id="tmplStoreListItem">
-        #: data.Name #<br />
-        #: data.WalkInAddressDisplayStrings[0] #<br />
+        <h3 class="item-title">#: data.name #</h3>
+        <p class="item-info">#: data.address1 #<br />
+        #: data.address2 #<br>
         <span>
-        #if(OpenNow === 1){#
-            Open
+        #if(data.ATM === true){#
+            ATM Location
         #}else{#
-            Closed
+            No ATM
         #}#
-        </span>
+        </span></p>
 </script>
 
 <script>

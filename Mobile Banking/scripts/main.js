@@ -69,15 +69,15 @@
 			.done(function(result) {
 				var len = result.length,
 				    pinImage = new google.maps.MarkerImage(
-                                    "images/cofeeCup-sprite.png",
+                                    "images/bcu-sprite.png",
                                     new google.maps.Size(49, 49),
                                     new google.maps.Point(0, 202)
                                     );
 
 				for (var i = 0; i < len; i++) {
 					locations.push({
-						title: result[i].WalkInAddressDisplayStrings[0] + ", " + result[i].WalkInAddressDisplayStrings[1],
-						position: new google.maps.LatLng(result[i].WalkInAddress.Coordinates.Latitude, result[i].WalkInAddress.Coordinates.Longitude),
+						title: result[i].name + " : " + result[i].address1 + ", " + result[i].address2,
+						position: new google.maps.LatLng(result[i].latitude, result[i].longitude),
                         icon: pinImage,
 						animation: google.maps.Animation.DROP
 					});
