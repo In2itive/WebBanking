@@ -1,0 +1,6 @@
+[
+    { "order": "1", "title": "*NEW*  BCU Mobile", "description": "Enjoy the ease and convinence of mobile banking.", "url": "images/mobile.png"},
+    { "order": "2", "title": "Mobile Security", "description": "The mobile app uses the same security creidetals as Web and Phone Banking. If you dont have access, Sign-up now.", "url": "images/security.png" },
+    { "order": "3", "title": "Locate Branches", "description": "Use your current location to find the nerest BCU branch.", "url": "images/locate.png" },
+	{ "order": "4", "title": "More services", "description": "Contact or visit a branch to utilise all the services BCU has to offer.", "url": "images/services.png" }
+]

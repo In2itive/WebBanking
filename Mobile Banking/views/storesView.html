@@ -6,23 +6,26 @@
 			<li>List</li>
 		</ul>
 	</div>
-</header>
+    </header>
 	<div data-role="content">
     	<div class="offline">
             Please reconnect to the Internet.
         </div>
-        <div id="stores">
-            <div id="map">
-			</div>
+        <div id="branches">
             <div data-role="scroller">
- 				<div id="branches">
+                
+
+                        <ul class="cardListWrapper" data-role="listview" data-style="inset" data-type="group">
+                            <li>
 					<ul data-role="listview" id="storeList" 
 						data-style="inset"  data-template="tmplStoreListItem" data-bind="source: branches" style="display: none">
 					</ul>
-				</div>
-               <!-- <ul data-role="listview" id="storeList" data-style="inset" style="display: none">
-                </ul> -->
+                            </li>
+                        </ul>
             </div>    
+            <div id="map">
+			</div>
+            
         </div>           
     </div>
 </div>
@@ -41,6 +44,7 @@
 </script>
 
 <script>
+
     function storesShow(){
         onStoresShow();
 

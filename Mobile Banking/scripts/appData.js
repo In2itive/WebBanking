@@ -30,7 +30,7 @@ var AppData = function() {
 	];
     
 	_announcements = [
-		{ title: "Welcome to BCU Mobile", description: "Enjoy the ease and convinence of mobile banking.", url: "images/mobile.png" },
+		{ title: "*NEW*  BCU Mobile", description: "Enjoy the ease and convinence of mobile banking.", url: "images/mobile.png" },
 		{ title: "Mobile Security", description: "The mobile app uses the same security creidetals as Web and Phone Banking. If you dont have access, Sign-up now.", url: "images/rewards.png" },
 		{ title: "Locate Branches", description: "Use your current location to find the nerest BCU branch.", url: "images/cheers.png" },
 		{ title: "More services", description: "Contact or visit a branch to utilise all the services BCU has to offer.", url: "images/hot-drink.png" }
@@ -118,17 +118,13 @@ var AppData = function() {
 
 	return {
 		getStarbucksLocations: function(lat, lng, max) {
-			//var route = $.extend({}, _endpoints.starbucksLocs);
 			var route = $.extend({}, _endpoints.branchData);
             
-			route.path = route.path.replace(/{LAT}/g, lat);
-			route.path = route.path.replace(/{LONG}/g, lng);
-			route.path = route.path.replace(/{MAX}/g, max || 10);
+			//route.path = route.path.replace(/{LAT}/g, lat);
+			//route.path = route.path.replace(/{LONG}/g, lng);
+			//route.path = route.path.replace(/{MAX}/g, max || 10);
 
-			if (document.location.hostname === "coffee") {
-				//Test environment (localhost) - fake response
-				route = $.extend({}, _endpoints.starbucksTest);
-			}
+
 
 			return _private.load(route, {});
 		},

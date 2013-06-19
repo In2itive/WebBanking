@@ -1,0 +1,346 @@
+[
+    {
+        "name": "Head Office and Toronto West Branch",
+        "address1": "2280 Bloor Street West",
+        "address2": "Toronto, Ontario, M6S 1N9",
+        "latitude": 43.65077,
+        "longitude": -79.47848,
+        "ATM": true,
+        "contacts": [
+            {
+                "label": "Telephone:",
+                "value": "(416) 763-6883"
+            },
+            {
+                "label": "Toll Free:",
+                "value": "1-800-461-5941"
+            },
+            {
+                "label": "Fax:",
+                "value": "(416) 763-4512"
+            },
+            {
+                "label": "Branch Manager:",
+                "value": "Pavlo Czerwoniak"
+            }
+        ],
+        "hours": [
+            {
+                "label": "Monday",
+                "value": "9:30am - 5:30pm"
+            },
+            {
+                "label": "Tuesday",
+                "value": "9:30am - 5:30pm"
+            },
+            {
+                "label": "Wednesday",
+                "value": "9:30am - 5:30pm"
+            },
+            {
+                "label": "Thursday",
+                "value": "9:30am - 7:30pm"
+            },
+            {
+                "label": "Friday",
+                "value": "9:30am - 7:00pm"
+            },
+            {
+                "label": "Saturday",
+                "value": "9:30am - 3:00pm"
+            },
+            {
+                "label": "Sunday",
+                "value": "Closed"
+            }
+        ]
+    },
+    {
+        "name": "Mississauga Branch",
+        "address1": "1891 Rathburn Road East",
+        "address2": "Mississauga, Ontario L4W 3Z3",
+        "latitude": 43.63549,
+        "longitude": -79.59779,
+        "ATM": true,
+        "contacts": [
+            {
+                "label": "Telephone:",
+                "value": "(905) 238-1273"
+            },
+            {
+                "label": "Fax:",
+                "value": "(905) 238-1526"
+            },
+            {
+                "label": "Branch Manager:",
+                "value": "Roma Denderys"
+            }
+        ],
+        "hours": [
+            {
+                "label": "Monday",
+                "value": "9:30am - 5:30pm"
+            },
+            {
+                "label": "Tuesday",
+                "value": "9:30am - 5:30pm"
+            },
+            {
+                "label": "Wednesday",
+                "value": "9:30am - 5:30pm"
+            },
+            {
+                "label": "Thursday",
+                "value": "9:30am - 7:30pm"
+            },
+            {
+                "label": "Friday",
+                "value": "9:30am - 7:00pm"
+            },
+            {
+                "label": "Saturday",
+                "value": "9:30am - 3:00pm"
+            },
+            {
+                "label": "Sunday",
+                "value": "Closed"
+            }
+        ]
+    },
+    {
+        "name": "Oakville Branch",
+        "address1": "3015 Winston Churchill Blvd.",
+        "address2": "Mississauga, Ontario L5L 2V8",
+        "latitude": 43.52397,
+        "longitude": -79.68199,
+        "ATM": true,
+        "contacts": [
+            {
+                "label": "Telephone:",
+                "value": "(905) 363-2999"
+            },
+            {
+                "label": "Fax:",
+                "value": "(905) 363-2998"
+            },
+            {
+                "label": "Branch Manager:",
+                "value": "Josyf Pelech"
+            }
+        ],
+        "hours": [
+            {
+                "label": "Monday",
+                "value": "9:30am - 5:30pm"
+            },
+            {
+                "label": "Tuesday",
+                "value": "9:30am - 5:30pm"
+            },
+            {
+                "label": "Wednesday",
+                "value": "9:30am - 5:30pm"
+            },
+            {
+                "label": "Thursday",
+                "value": "9:30am - 7:30pm"
+            },
+            {
+                "label": "Friday",
+                "value": "9:30am - 7:00pm"
+            },
+            {
+                "label": "Saturday",
+                "value": "9:30am - 3:00pm"
+            },
+            {
+                "label": "Sunday",
+                "value": "Closed"
+            }
+        ]
+    },
+    {
+        "name": "North Toronto Branch",
+        "address1": "7077 Bathurst Street",
+        "address2": "Vaughan, Ontario L4J 2J6",
+        "latitude": 43.79431,
+        "longitude": -79.44607,
+        "ATM": true,
+        "contacts": [
+            {
+                "label": "Telephone:",
+                "value": "(905) 707-8155"
+            },
+            {
+                "label": "Fax:",
+                "value": "(905) 707-5226"
+            },
+            {
+                "label": "Branch Manager:",
+                "value": "Borys Mykhaylets"
+            }
+        ],
+        "hours": [
+            {
+                "label": "Monday",
+                "value": "9:30am - 5:30pm"
+            },
+            {
+                "label": "Tuesday",
+                "value": "9:30am - 5:30pm"
+            },
+            {
+                "label": "Wednesday",
+                "value": "9:30am - 5:30pm"
+            },
+            {
+                "label": "Thursday",
+                "value": "9:30am - 7:00pm"
+            },
+            {
+                "label": "Friday",
+                "value": "9:30am - 6:00pm"
+            },
+            {
+                "label": "Saturday",
+                "value": "9:30am - 3:00pm"
+            },
+            {
+                "label": "Sunday",
+                "value": "Closed"
+            }
+        ]
+    },
+    {
+        "name": "Hamilton Branch",
+        "address1": "249 Kenilworth Avenue North",
+        "address2": "Hamilton, Ontario, L8H 4S4",
+        "latitude": 43.24781,
+        "longitude": -79.80679,
+        "ATM": true,
+        "contacts": [
+            {
+                "label": "Telephone:",
+                "value": "(905) 544-7776"
+            },
+            {
+                "label": "Toll Free:",
+                "value": "1-877-859-8877"
+            },
+            {
+                "label": "Fax:",
+                "value": "(905) 545-9662"
+            },
+            {
+                "label": "Branch Manager:",
+                "value": "Stefania Barrios"
+            }
+        ],
+        "hours": [
+            {
+                "label": "Monday",
+                "value": "9:30am - 5:00pm"
+            },
+            {
+                "label": "Tuesday",
+                "value": "9:30am - 5:00pm"
+            },
+            {
+                "label": "Wednesday",
+                "value": "Closed"
+            },
+            {
+                "label": "Thursday",
+                "value": "9:30am - 7:00pm"
+            },
+            {
+                "label": "Friday",
+                "value": "9:30am - 7:00pm"
+            },
+            {
+                "label": "Saturday",
+                "value": "9:30am - 2:00pm"
+            },
+            {
+                "label": "Sunday",
+                "value": "Closed"
+            }
+        ]
+    },
+    {
+        "name": "Ottawa Branch",
+        "address1": "913 Carling Avenue",
+        "address2": "Ottawa, Ontario K1Y 4E3",
+        "latitude": 45.39568,
+        "longitude": -75.7122,
+        "ATM": true,
+        "contacts": [
+            {
+                "label": "Telephone:",
+                "value": "(613) 722-7075"
+            },
+            {
+                "label": "Toll Free:",
+                "value": "1-800-561-1682"
+            },
+            {
+                "label": "Fax:",
+                "value": "(613) 722-4206"
+            },
+            {
+                "label": "Branch Manager:",
+                "value": "Nadia Dubik Hawryshkewych"
+            }
+        ],
+        "hours": [
+            {
+                "label": "Monday",
+                "value": "9:30am - 5:30pm"
+            },
+            {
+                "label": "Tuesday",
+                "value": "9:30am - 5:30pm"
+            },
+            {
+                "label": "Wednesday",
+                "value": "9:30am - 5:30pm"
+            },
+            {
+                "label": "Thursday",
+                "value": "9:30am - 7:30pm"
+            },
+            {
+                "label": "Friday",
+                "value": "9:30am - 7:00pm"
+            },
+            {
+                "label": "Saturday",
+                "value": "9:30am - 3:00pm"
+            },
+            {
+                "label": "Sunday",
+                "value": "Closed"
+            }
+        ]
+    },
+    {
+        "name": "Scarborough (Toronto East) Branch",
+        "address1": "221 Milner Avenue",
+        "address2": "Scarborough, Ontario, M1S 4P4",
+        "latitude": 43.78861,
+        "longitude": -79.24032,
+        "ATM": true,
+        "contacts": [
+            {
+                "label": "Telephone:",
+                "value": ""
+            }
+        ],
+        "hours": [
+            {
+                "label": "Wednesday",
+                "value": "10:30am - 2:00pm"
+            }
+        ]
+    }
+]

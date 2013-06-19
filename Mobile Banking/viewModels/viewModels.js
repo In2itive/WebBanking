@@ -4,7 +4,8 @@
     	AddCardViewModel,
     	CardsViewModelBase,
     	SingleCardViewModel,
-    	RewardsViewModel;
+    	RewardsViewModel,
+        branchesViewModel;
         
 	AddCardViewModel = kendo.data.ObservableObject.extend({
 		cardNumber: null,
@@ -231,12 +232,15 @@
 	});
     
 	branchesViewModel = kendo.observable({
-		branches: [],
-        
+
+        branches: [],
 		load: function(branches) {
+            console.log("branchesViewModel 1");
 			var that = this;
 			that.set("branches", branches);
+                    console.log("branchesViewModel 12");
 		}
+
 	});    
 
 	cardsViewModel = kendo.observable({

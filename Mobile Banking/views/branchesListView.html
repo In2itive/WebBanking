@@ -1,0 +1,38 @@
+<div data-role="view" id="branchesList" data-title="Branches" data-model="app.views.branches.viewModel">
+	<header data-role="header">
+		<div data-role="navbar">
+            <a data-role="backbutton" data-align="left">Back</a>
+            <span data-role="view-title"></span>
+		</div>    
+    </header>
+
+    
+	<div id="branchesViewContent" data-role="content">
+ 		<!-- List of cards -->
+        <ul class="branchListWrapper" data-role="listview" data-style="inset" data-type="group">
+            <li>
+                <ul id="branchesList" data-role="listview" data-bind="source: branchList" data-template="branchesListTemplate">
+                </ul>
+            </li>
+        </ul>       
+          
+    </div>
+
+</div>
+
+<script type="text/x-kendo-template" id="branchesListTemplate">
+        <h3 class="item-title">#: data.name #</h3>
+        <p class="item-info">#: data.address1 #<br />
+        #: data.address2 #<br>
+        <span>
+        #if(data.ATM === true){#
+            ATM Location
+        #}else{#
+            No ATM
+        #}#
+        </span></p>
+</script>
+
+<script>
+    var button = $("#button").kendoMobileBackButton();
+</script>

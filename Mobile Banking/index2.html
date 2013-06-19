@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Mobile Banking</title>
+		<title>Jitterz Mobile</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
  
 		<!-- Styles -->
-		<link rel="stylesheet" href="styles/kendo.mobile.all.min.css" />
-		<link rel="stylesheet" href="styles/kendo.in2itive.mobile.all.css" />
+		<link rel="stylesheet" href="kendo/styles/kendo.mobile.all.min.css" />
+		<link rel="stylesheet" href="kendo/styles/kendo.jitterz.mobile.all.css" />
 
 		<!-- Default Stylesheet -->
 		<link rel="stylesheet" href="styles/main.css" />
@@ -26,11 +26,8 @@
 		<link rel="stylesheet" media="only screen and (min-device-width: 600px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio:1)" href="styles/tablet-600-1024.css" type="text/css" />
 		<!-- Tablet 768x1024 High DPI (aka iPad3") -->
 		<link rel="stylesheet" media="only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio:2)" href="styles/tablet-1024-hdpi.css" type="text/css" />
-        <script src="cordova.js"></script>
-		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>        
-        <script data-main="scripts/main" src="scripts/lib/require.js"></script>
-    </head>
-    <body>
+	</head>
+	<body>
 		<!-- Page Layout -->
 		<div data-role="layout" data-id="page-default">
 			<header data-role="header" data-id="page-default-header">
@@ -43,25 +40,40 @@
 					<a href="#home" data-icon="home">Home</a>
 					<a href="views/bankingView.html" data-icon="card">Banking</a>
 					<a href="views/rewardsView.html" data-icon="rewards">Rewards</a>
-					<a href="views/branchesMapView.html" data-icon="branches">Branches</a>
+					<a href="views/storesView.html" data-icon="branches">Branches</a>
 				</div>
 			</div>
-		</div>  
-        
-		<!-- Home page -->
-        <div data-role="view" id="home-view" data-layout="page-default" data-title="BCU Mobile Banking" data-model="app.views.home.viewModel">
-            <div id="announcements">
-            <ul id="announcements-listview" data-role="listview" data-bind="source: homeList" data-template="announcement-listview-template", data-style="inset"></ul>
-            </div>
-        </div>        
+		</div>
 
-		<!-- Page templates -->
+		<!-- Home page -->
+		<div data-role="view" id="home" data-title="BCU Mobile Banking" data-model="announcementViewModel" data-type="group">
+			<div data-role="content">
+				<div id="announcements">
+        					<ul data-role="listview" id="announcements-listview" 
+        						data-style="inset"  data-template="announcement-listview-template" data-bind="source: announcements">
+        					</ul>
+        		</div>
+			</div>
+		</div>
+
+		<!-- Home page template -->
 		<script type="text/x-kendo-template" id="announcement-listview-template">
 			<img class="item-photo" src="${url}" />
 			<h3 class="item-title">${title}</h3>
 			<p class="item-info">${description}</p>
 		</script>
-        
-        
-    </body>
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+		<script type="text/javascript" src="kendo/js/jquery.min.js"></script>
+		<script type="text/javascript" src="kendo/js/kendo.mobile.min.js"></script>
+		<script type="text/javascript" src="scripts/appData.js"></script>
+		<script type="text/javascript" src="viewModels/viewModels.js"></script>
+		<script type="text/javascript" src="scripts/mainold.js"></script>
+
+		<script>
+			var app = new kendo.mobile.Application(document.body, { transition: "slide", layout: "page-default" });
+		</script>
+	</body>
 </html>

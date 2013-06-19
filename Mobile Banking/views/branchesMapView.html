@@ -1,0 +1,20 @@
+<div data-role="view" id="branchesmap" data-title="Branches" data-model="app.views.branches.viewModel" data-show="app.views.branches.show" data-init="app.views.branches.init" data-stretch="true">
+	<header data-role="header">
+		<div data-role="navbar">
+            <span data-role="view-title"></span>
+            <button data-role="button" data-align="right" id="buttonBranchesListView" data-bind="events: { click: navToBranchesList }">List</button>
+		</div>    
+    </header>
+	<div data-role="content">
+    	<div class="offline">
+            Please reconnect to the Internet.
+        </div>
+        <div id="branches"> 
+
+            <div id="map">
+			</div>
+
+        </div>           
+    </div>
+</div>
+
