@@ -1,5 +1,5 @@
-define(["jQuery", "kendo", "app/utils", "app/views/home-view", "app/views/branch-view"], 
-    function ($,   kendo,   utils,       homeView,              branchView) {
+define(["jQuery", "kendo", "app/utils", "app/views/home-view", "app/views/branch-view", "app/views/accounts-view"], 
+    function ($,   kendo,   utils,       homeView,              branchView,              accountsView) {
     var _kendoApplication;
  
      var _onError = function (error, url, line) {
@@ -19,7 +19,8 @@ define(["jQuery", "kendo", "app/utils", "app/views/home-view", "app/views/branch
         },
         views: {
             home: homeView,
-            branches : branchView
+            branches : branchView,
+            accounts : accountsView
         }
     }
 });

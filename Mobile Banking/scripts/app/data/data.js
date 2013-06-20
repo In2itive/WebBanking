@@ -61,7 +61,16 @@ define(["jQuery", "kendo", "config", "app/utils"], function ($, kendo, config, u
                     dataType: "json"
                 }
             }
-        }),        
+        }),   
+        
+        accountsList: new kendo.data.DataSource({
+            transport: {
+                read: {
+                    url: config.accountsUrl,
+                    dataType: "json"
+                }
+            }
+        }),
         
         genresList: new kendo.data.DataSource(new DataSourceConfig(config.genresUrl, "Name")),
         

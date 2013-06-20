@@ -154,6 +154,8 @@
     background:none;
     color:#fff;
 }
+
+
 .km-ios .km-view .km-tabstrip .km-button.km-state-active {
     background-color: rgba(255, 200, 0, 0.9);
 }

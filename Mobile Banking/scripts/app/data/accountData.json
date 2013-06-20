@@ -1,0 +1,6 @@
+[
+    { "order": "1", "group": "Demand", "cust": "5628", "name": "Chequing", "sub": "1", "balance": "2193.17"},
+    { "order": "2", "group": "Demand", "cust": "5628", "name": "SaveCheq", "sub": "1", "balance": "4982.08"},
+    { "order": "3", "group": "Term", "cust": "5628", "name": "GIC 3yr", "sub": "1", "balance": "26213.82"},
+    { "order": "4", "group": "Loan", "cust": "5628", "name": "Mortgage 5yr", "sub": "1", "balance": "100281.69"} 
+]

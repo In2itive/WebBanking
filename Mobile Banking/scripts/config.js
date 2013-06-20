@@ -11,6 +11,7 @@ define([], function () {
         staticURL: staticUrl,
         homeUrl: staticUrl + "/homeData.json",
         branchesUrl: staticUrl + "/branches.json",
+        accountsUrl: staticUrl + "/accountData.json",
         genresUrl: serviceUrl + "/Genres",
         artistsUrl: serviceUrl + "/Artists",
         albumsUrl: serviceUrl + "/Albums",

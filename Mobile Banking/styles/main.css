@@ -1,4 +1,25 @@
 
+
+@font-face {
+    font-family: "in2itive";
+    src: url("images/in2itive.woff") format("woff"),
+         url("images/in2itive.ttf") format("truetype");
+}
+
+.km-icon:after,
+.km-icon:before
+{
+    font: .8em/1em "in2itive";
+}
+
+.more {
+    margin: 0;
+    padding: 0;
+    width: 23px;
+    height: 23px;    
+
+}
+
 .cardPicture
 {
     background-repeat:no-repeat;
@@ -43,6 +64,88 @@
     -webkit-border-radius: 8px;
     border-radius: 8px;
 }
+
+.divRow
+{
+         width: 100%; 
+         display:block;
+         padding-bottom:5px;
+}
+.divColumn50
+{
+         float: left;
+         width: 50%;
+         display:block;
+}
+.divColumn25
+{
+         float: left;
+         width: 25%;
+         display:block;
+}
+.divColumn33
+{
+         float: left;
+         width: 33%;
+         display:block;
+}
+.divColumn30
+{
+         float: left;
+         width: 30%;
+         display:block;
+}
+.divColumn70
+{
+         float: left;
+         width: 70%;
+         display:block;
+}
+.divColumn60
+{
+         float: left;
+         width: 60%;
+         display:block;
+}
+.divColumn40
+{
+         float: left;
+         width: 40%;
+         display:block;
+}
+.divColumn10
+{
+         float: left;
+         width: 10%;
+         display:block;
+}
+
+#accounts-listview .name {
+	float: left;
+	font-size: .8em;
+    line-height: 1,4em;
+    margin: .3em 0 0 0;
+    color: #1266B5;
+}
+
+#accounts-listview .balance {
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    border: 1px solid #8FB5D9;
+	float: right;
+	font-size: .8em;
+    font-weight: 100;
+	line-height: 1.4em;
+    margin: .1em 0 .1em 0;
+    padding: .1em .4em .1em 0;
+    width: 68%;    
+    text-align: right;
+    color: #111111;
+    background-color: #fafafa;
+    width: 100%;
+}
+
+
 
 #announcements-listview .item-title {
 	float: left;
