@@ -69,7 +69,8 @@ define(["jQuery", "kendo", "config", "app/utils"], function ($, kendo, config, u
                     url: config.accountsUrl,
                     dataType: "json"
                 }
-            }
+            },
+            group: "group"
         }),
         
         genresList: new kendo.data.DataSource(new DataSourceConfig(config.genresUrl, "Name")),

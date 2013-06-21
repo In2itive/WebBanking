@@ -12,13 +12,14 @@
     font: .8em/1em "in2itive";
 }
 
+
 .more {
     margin: 0;
-    padding: 0;
-    width: 23px;
-    height: 23px;    
-
+    padding: .1em;
 }
+
+.km-ios .more { background-color: green; }
+.km-android .more { background-color: red; }
 
 .cardPicture
 {
@@ -138,7 +139,6 @@
 	line-height: 1.4em;
     margin: .1em 0 .1em 0;
     padding: .1em .4em .1em 0;
-    width: 68%;    
     text-align: right;
     color: #111111;
     background-color: #fafafa;
