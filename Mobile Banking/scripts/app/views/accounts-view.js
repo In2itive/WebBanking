@@ -3,6 +3,11 @@ function (kendo,  data) {
     return {
         viewModel: kendo.observable({
             accountsList: data.accountsList
-        })
+        }),
+        
+        initAccounts: function() {
+
+        }
+        
     };
 });

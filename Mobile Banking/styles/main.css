@@ -69,13 +69,13 @@
 .divRow
 {
          width: 100%; 
-         display:block;
+         display: inline-block;
          padding-bottom:5px;
 }
 .divColumn50
 {
          float: left;
-         width: 50%;
+         width: 49%;
          display:block;
 }
 .divColumn25
@@ -86,7 +86,7 @@
 }
 .divColumn33
 {
-         float: left;
+         /*float: left;*/
          width: 33%;
          display:block;
 }
@@ -121,6 +121,13 @@
          display:block;
 }
 
+.morecontent {
+    clear:both;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#fafafa;
+}
+
 #accounts-listview .name {
 	float: left;
 	font-size: .8em;
@@ -134,18 +141,15 @@
     border-radius: 8px;
     border: 1px solid #8FB5D9;
 	float: right;
-	font-size: .8em;
     font-weight: 100;
-	line-height: 1.4em;
-    margin: .1em 0 .1em 0;
-    padding: .1em .4em .1em 0;
+    margin: 0 22px .1em 0;
+    padding: 0 .3em 0 .3em;
     text-align: right;
     color: #111111;
     background-color: #fafafa;
-    width: 100%;
+    min-width: 75px;
+    max-width: 150px;    
 }
-
-
 
 #announcements-listview .item-title {
 	float: left;
@@ -632,6 +636,14 @@ input::-webkit-inner-spin-button {
 }
 
 .km-ios .km-listgroupinset .km-group-title {   
-    color: white;
-    text-shadow: 0 1px 1px rgba(100,100,100,.8);
+    color: #173552;
+    text-shadow: 0 1px 1px rgba(255,255,255,.8);
+}
+
+#banking-account-view {   
+    font-size: 80%;
+}
+
+a:-webkit-any-link{
+    color: #1266B5;
 }

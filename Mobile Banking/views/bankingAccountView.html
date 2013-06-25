@@ -1,19 +1,14 @@
 
 
-<div data-role="view" id="home-view" data-layout="page-default" data-title="Accounts" data-model="app.views.accounts.viewModel">
-    <div id="accounts">
-        
+<div data-role="view" id="banking-account-view" data-layout="page-default" data-title="Accounts" data-model="app.views.accounts.viewModel">
+    <div id="accounts">    
         <ul id="accounts-listview" data-type="group" data-role="listview" data-bind="source: accountsList" data-template="account-listview-template", data-style="inset"></ul>
     </div>
 </div> 
 
 <!-- View templates -->
 <script type="text/x-kendo-template" id="account-listview-template">
-    <a >
-    	<div class="divColumn60"><h3 class="name">${cust} - ${name} - ${sub}</h3></div>
-    	<div class="divColumn30"><p class="balance">${balance}</p></div>
+    <a class="banking-account-link" href='views/bankingAccountView.html'>${cust} - ${name} - ${sub}<p class="balance">${balance}</p>
     </a>
 </script>
-<script type="text/x-kendo-template" id="account-listview-template2">
-      <a href='views/bankingAccountView.html'>My Accounts</a>
-</script>
+
