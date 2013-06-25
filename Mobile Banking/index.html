@@ -41,7 +41,7 @@
 			</header>
 			<div data-role="footer">
 				<div data-role="tabstrip" data-id="page-tabstrip">
-					<a href="#home" data-icon="home">Home</a>
+					<a href="#home-view" data-icon="home">Home</a>
 					<a href="views/bankingView.html" data-icon="card">Banking</a>
 					<a href="views/rewardsView.html" data-icon="rewards">Rewards</a>
 					<a href="views/branchesMapView.html" data-icon="branches">Branches</a>
@@ -51,8 +51,12 @@
         
 		<!-- Home page -->
         <div data-role="view" id="home-view" data-layout="page-default" data-title="BCU Mobile Banking" data-model="app.views.home.viewModel">
-            <div id="announcements">
-            <ul id="announcements-listview" data-role="listview" data-bind="source: homeList" data-template="announcement-listview-template", data-style="inset"></ul>
+			<div data-role="content">            
+                <div id="announcements">
+                    <ul data-role="listview" id="announcements-listview" 
+						data-style="inset"  data-template="announcement-listview-template" data-bind="source: homeList">
+					</ul>
+                </div>
             </div>
         </div>        
 
@@ -62,7 +66,6 @@
 			<h3 class="item-title">${title}</h3>
 			<p class="item-info">${description}</p>
 		</script>
-        
-        
+         
     </body>
 </html>

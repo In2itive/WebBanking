@@ -95,6 +95,8 @@
     <Content Include="scripts\app\views\branch-view.js" />
     <Content Include="scripts\app\views\accounts-view.js" />
     <Content Include="scripts\app\views\home-view.js" />
+    <Content Include="scripts\cordova.android.js" />
+    <Content Include="scripts\cordova.ios.js" />
     <Content Include="scripts\lib\jquery.min.js" />
     <Content Include="scripts\lib\kendo.indexedlistview.js" />
     <Content Include="scripts\lib\kendo.mobile.min.js" />
